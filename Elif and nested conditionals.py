@@ -8,10 +8,10 @@ age = int(input("What is your age? "))
 
 if height >= 120:
     print("You can ride the rollercoaster")
-    if age < 18:
-        print (f"Ticket price for people that is under 18 years old is 8$")
-    elif age == 18 :
-        print (f"Ticket price for people that is {age} years old is 12$")
+    if age <= 12:
+        print (f"Ticket price for {age} year olds is 8$")
+    elif age <= 18 :
+        print (f"Ticket price for {age} year olds is 12$")
     else: print ("Ticket price for people that is over 18 years old is 19$")
 
 elif height < 120 and age > 18:
