@@ -20,5 +20,5 @@ for sym in range(0, nr_symbols):
 for num in range(0, nr_numbers):
         password += random.choice(numbers)
 
-        if len(password) == (nr_letters + nr_numbers + nr_symbols):
-            print(password)
+        # if len(password) == (nr_letters + nr_numbers + nr_symbols):
+print(password)
