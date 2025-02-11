@@ -11,13 +11,13 @@ nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 password =""
-for char in range(1, nr_letters +1):
+for char in range(0, nr_letters):
         password += random.choice(letters)
 
-for sym in range(1, nr_symbols + 1):
+for sym in range(0, nr_symbols):
         password += random.choice(symbols)
 
-for num in range(1, nr_numbers + 1):
+for num in range(0, nr_numbers):
         password += random.choice(numbers)
 
         if len(password) == (nr_letters + nr_numbers + nr_symbols):
