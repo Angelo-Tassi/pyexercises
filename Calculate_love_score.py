@@ -1,16 +1,22 @@
 
 
 def calculate_love_score(name1, name2):
-    truelove = "truelove"
-    count_letters = []
-    for letter in (truelove):
-        if letter in name1:
-            count_letters.append(letter)
-        if letter in name2:
-            count_letters.append(letter)
+    name_ensamble = name1+name2
+    lowernames = name_ensamble.lower()
+    print(lowernames)
+    true = "true"
+    love = "love"
+    count_true = []
+    count_love = []
+    for letter in (true):
+        if letter in lowernames :
+            count_true.append(letter)
+    for char in (love):
+        if char in lowernames:
+            count_love.append(char)
 
-        #print(letter)
-        print(count_letters)
-        #print(f"i nostri {name1} e {name2} si amano !")
+    print(f"Lovescore = {len(count_true)}{len(count_love)}")
 
-calculate_love_score(name1= "giovanni", name2="giuseppina")
+
+
+calculate_love_score("Oronzo Cana", "Genoveffa Piluzzi")
