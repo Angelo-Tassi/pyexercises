@@ -1,22 +1,22 @@
 
-
 def calculate_love_score(name1, name2):
-    name_ensamble = name1+name2
-    lowernames = name_ensamble.lower()
-    print(lowernames)
-    true = "true"
-    love = "love"
-    count_true = []
-    count_love = []
-    for letter in (true):
-        if letter in lowernames :
-            count_true.append(letter)
-    for char in (love):
-        if char in lowernames:
-            count_love.append(char)
+    combined_names = name1 + name2
+    lower_names = combined_names.lower()
 
-    print(f"Lovescore = {len(count_true)}{len(count_love)}")
+    t = lower_names.count("t")
+    r = lower_names.count("r")
+    u = lower_names.count("u")
+    e = lower_names.count("e")
+    first_digit = t + r + u + e
 
+    l = lower_names.count("l")
+    o = lower_names.count("o")
+    v = lower_names.count("v")
+    e = lower_names.count("e")
+    second_digit = l + o + v + e
 
+    score = int(str(first_digit) + str(second_digit))
+    print(score)
+    print(first_digit)
 
-calculate_love_score("Oronzo Cana", "Genoveffa Piluzzi")
+calculate_love_score("Ermelindo Cenelibbera", "Ermenegilda Piluzzi")
