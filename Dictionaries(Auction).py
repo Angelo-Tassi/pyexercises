@@ -2,7 +2,7 @@ price ={} #empty dictionary
 
 while True:
 
-    username = (str(input("What is your name ?\n")))
+    username = (str(input("What is your name ?\n"))).title()
     bid = (int(input("How much do you want to bid ?\n")))
 
     price[username]=bid #dictionary[key]=value
